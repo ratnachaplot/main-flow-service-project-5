@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.calculator:hover {
+    transform: scale(1.02);
+}
+
+.calculator-screen {
+    width: 95%;
+    height: 80px;
+    border: none;
+    background-color: #212121;
+    color: #ffffff;
+    text-align: right;
+    padding: 12px;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    height: 60px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #f0f0f0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.operator {
+    background: linear-gradient(to right, #f57c00, #ff9800);
+    color: #ffffff;
+}
+
+.operator:hover {
+    background: linear-gradient(to right, #e67e22, #ff9e3d);
+}
+
+.all-clear {
+    background: linear-gradient(to right, #f44336, #e57373);
+    color: #ffffff;
+}
+
+.all-clear:hover {
+    background: linear-gradient(to right, #e53935, #ef5350);
+}
+
+.equal-sign {
+    background: linear-gradient(to right, #4caf50, #81c784);
+    color: #ffffff;
+    grid-column: span 2;
+}
+
+.equal-sign:hover {
+    background: linear-gradient(to right, #43a047, #66bb6a);
+}
+
+.decimal, .number {
+    background: linear-gradient(to right, #e0e0e0, #eeeeee);
+    color: #000000;
+}
+
+.decimal:hover, .number:hover {
+    background: linear-gradient(to right, #d4d4d4, #e0e0e0);
+}
